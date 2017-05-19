@@ -6,8 +6,8 @@
 % constant
 sec = 5; % duration of sound in second
 sf = 16000; % sampling frequency
-fc=1000;    % center freq.
-fmod=5;    % mod. freq.
+fc=1000;    % center frequency
+fmod=5;    % mod. frequency
 t=[1:sf*sec]/sf; % time
 
 % AM
