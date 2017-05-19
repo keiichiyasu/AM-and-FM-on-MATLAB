@@ -1,12 +1,14 @@
-% am qfm script
+% AM and qFM script
 % Keiichi YASU
-% 2011/11/03
+% 2011/11/03 : First commit
+% 2017/05/19 : Change to use variables
 
 % constant
-t=[1:16000*5]/16000;
-fc=1000;    % center freq. 
+sec = 5; % duration of sound in second
+sf = 16000; % sampling frequency
+fc=1000;    % center freq.
 fmod=5;    % mod. freq.
-
+t=[1:sf*sec]/sf; % time
 
 % AM
 am=sin(2*pi*(fc-fmod)*t)/4+sin(2*pi*fc*t)+sin(2*pi*(fc+fmod)*t)/4;
